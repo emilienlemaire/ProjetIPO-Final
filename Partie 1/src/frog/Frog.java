@@ -35,10 +35,10 @@ public class Frog implements IFrog {
 				aCase = new Case(aCase.absc, aCase.ord - 1);
 				break;
 			case right:
-				if(aCase.ord < 26) aCase = new Case(aCase.absc + 1, aCase.ord);
+				if(aCase.absc < 26) aCase = new Case(aCase.absc + 1, aCase.ord);
 				break;
 			case left:
-				if(aCase.ord > 0) aCase = new Case(aCase.absc -1, aCase.ord);
+				if(aCase.absc > 0) aCase = new Case(aCase.absc -1, aCase.ord);
 				break;
 		}
 	}
